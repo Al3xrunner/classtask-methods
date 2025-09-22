@@ -1,21 +1,11 @@
-############################
-# OS junk
-############################
+# --- OS junk
 .DS_Store
 Thumbs.db
 
-############################
-# VS Code
-############################
-.vscode/*
-!.vscode/settings.json
-!.vscode/launch.json
-!.vscode/tasks.json
-!.vscode/extensions.json
+# --- VS Code
+.vscode/
 
-############################
-# Java compiled output
-############################
+# --- Java builds
 *.class
 bin/
 out/
@@ -23,18 +13,17 @@ build/
 target/
 dist/
 release/
+classes/
 
-# Test/coverage reports
+# --- Logs / coverage
+*.log
 test-output/
 surefire-reports/
 failsafe-reports/
-jacoco.exec
 jacoco*.exec
 coverage/
 
-############################
-# Archives / packages
-############################
+# --- Archives
 *.jar
 *.war
 *.nar
@@ -43,69 +32,16 @@ coverage/
 *.tar.gz
 *.rar
 
-############################
-# Logs
-############################
-*.log
-
-############################
-# BlueJ
-############################
-*.ctxt
-
-############################
-# J2ME
-############################
-.mtj.tmp/
-
-############################
-# JVM crash logs
-############################
-hs_err_pid*
-replay_pid*
-java_pid*
-
-############################
-# Maven
-############################
-.mvn/timing.properties
-# (Keep wrapper JAR tracked if you use it)
-#!.mvn/wrapper/maven-wrapper.jar
-dependency-reduced-pom.xml
-buildNumber.properties
-release.properties
-# Common Maven generated sources
-generated-sources/
-
-############################
-# Gradle
-############################
-.gradle/
-build/
-# Keep the Gradle wrapper scripts and wrapper JAR if present:
-!gradle/wrapper/gradle-wrapper.jar
-!gradlew
-!gradlew.bat
-
-############################
-# Eclipse / IDE metadata
-############################
+# --- IDE metadata
+.idea/
+*.iml
 .project
 .classpath
 .settings/
 
-############################
-# IntelliJ IDEA
-############################
-.idea/
-*.iml
-*.ipr
-*.iws
-
-############################
-# NetBeans
-############################
-nbproject/private/
-nbbuild/
-nbdist/
-.nb-gradle/
+# --- Tools
+.gradle/
+.mvn/
+gradlew
+gradlew.bat
+gradle/
