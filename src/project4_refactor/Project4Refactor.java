@@ -31,7 +31,7 @@ public class Project4Refactor {
     }
 
     static void showMenu() {
-        System.out.println("\n=== Project 4 Menu ===");
+        System.out.println("\nMenu");
         System.out.println("1) Part 1. Syntax");
         System.out.println("2) Part 2. Simple dialog with loop");
         System.out.println("3) Part 3. Improved dialog with loop");
@@ -60,11 +60,11 @@ public class Project4Refactor {
             System.out.println(i);
         }
 
-        // 1..10 (i++)
+        // 1-10 (i++)
         for (int i = 1; i <= 10; i++) {
             System.out.print(i + (i < 10 ? " " : "\n"));
         }
-        // 10..1 (i--)
+        // 10-1 (i--)
         for (int i = 10; i >= 1; i--) {
             System.out.print(i + (i > 1 ? " " : "\n"));
         }
@@ -114,7 +114,7 @@ public class Project4Refactor {
         }
     }
 
-    // Part 4. Put previous Project (3.3) into loop
+    // Part 4. Put previous Project (4.3) into loop
     static void part4RepeatWholeConversation(Scanner sc) {
         do {
             System.out.print("Enter any string: ");
